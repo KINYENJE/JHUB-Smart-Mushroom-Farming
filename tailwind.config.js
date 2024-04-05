@@ -11,6 +11,7 @@ module.exports = {
       ...require('tailwindcss/colors'),
       success: 'rgb(33 , 150 , 83, 1)',
       secondary_blue: 'rgb(71 ,85 , 105 , 1)',
+      primary_blue: 'rgb(14 37 87 / 1)',
     }
   },
   plugins: [],
