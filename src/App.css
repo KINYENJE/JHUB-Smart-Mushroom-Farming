@@ -52,6 +52,22 @@ h1, h2, h3, h4, h5, h6 {
  
 }
 
+.sticky-at-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgb(14 37 87 / 0.9);
+  border-radius: 0.1rem;
+  color: whitesmoke;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-bottom: 3px solid rgb(33 , 150 , 83, 1);
+  border-top: none;
+  /* transition: top 0.3s ease-in-out; */
+ 
+}
+
 *{
   scroll-behavior: smooth;
 }

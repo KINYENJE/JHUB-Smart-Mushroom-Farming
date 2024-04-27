@@ -1,15 +1,21 @@
 import React from 'react'
 import MushroomSlider from './MushroomSlider'
-import { MushroomTypes } from '../constants'
+import { IoT_MlInfo, MushroomTypes } from '../constants'
 import ContactUs from './ContactUs'
+import IoT_ML from './IoT_ML'
+import farmers_ai from '../assets/images/farmer_with_AI2.jpeg'
+
+
 
 function Hero() {
   return (
   <div className="w-full max-w-[1440px] px-8 lg:px-14 App min-h-[100vh] mt-10  " id='home'>
-    <h1 className='block text-4xl font-bold sm:text-title-xl underline underline-offset-4 '>SMART MUSHROOM FARMING</h1>
+    <h1 className='block text-4xl font-bold sm:text-title-xl underline underline-offset-4 '>
+      SMART MUSHROOM FARMING
+      </h1>
 
     {/** Mushroom farming in kenya details */}
-    <div className="w-full flex gap-5 my-12 pic rounded-lg">
+    <div className="w-full flex gap-5 my-12 rounded-lg bg-center bg-cover bg-no-repeat" style={{backgroundImage: `url(${farmers_ai})`}}>
       
       <div className="w-2/3 text-wrap flex items-center justify-center px-10 blue_overlay rounded-lg " data-aos="fade-right"  data-aos-duration="3000">
       <p className='leading-9 text-left text-white font-semibold '>
@@ -24,7 +30,7 @@ function Hero() {
 
       {/** Mushroom farming in kenya image */}
       <div className="w-2/3 flex items-center justify-center overflow-hidden" data-aos="fade-left"  data-aos-duration="3000">
-       <div className="w-[300px] lg:w-[400px] h-96  pic rounded-lg border-2 border-black overflow-x-hidden" >
+       <div className="w-[300px] lg:w-[400px] h-96  rounded-lg  overflow-x-hidden bg-center  bg-contain" style={{backgroundImage: `url(${farmers_ai})`}} >
           {/* <img src={heroImage} alt="mushroom farming in kenya" className="w-full h-full object-cover" /> */}
         </div>
       </div>
@@ -37,6 +43,14 @@ function Hero() {
       <h2 className='text-2xl font-semibold capitalize my-8 underline underline-offset-3'>Variety of Mushrooms Grown In Kenya</h2>
 
       <MushroomSlider slides={MushroomTypes}/>
+    </section>
+
+
+    {/** iot and ml section */}
+    <section className='my-28 w-full  overflow-hidden ' id='iot-ml'>
+      <h2 className='text-3xl font-semibold capitalize my-8 underline underline-offset-3'>IoT and Machine Learning</h2>
+      <p className='font-semibold text-warmGray-700'>Our IoT and Machine Learning solutions help you to monitor and control your mushroom farm from anywhere in the world.</p>
+      <IoT_ML slides={IoT_MlInfo}/>
 
     </section>
 

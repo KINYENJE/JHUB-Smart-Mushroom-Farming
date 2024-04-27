@@ -1,5 +1,5 @@
 import React from 'react'
-import { ContactDetails } from '../constants'
+// import { ContactDetails } from '../constants'
 
 const ContactCard = ({profilePic, name, role, linkedInUrl}) => {
   return (
