@@ -1,7 +1,7 @@
 import React from 'react'
 // import { ContactDetails } from '../constants'
 
-const ContactCard = ({profilePic, name, role, linkedInUrl}) => {
+const ContactCard = ({profilePic, name, role, linkedin}) => {
   return (
     <div className='flex flex-col items-center justify-between gap-4 py-4  p-8'>
       {/** profile image */}
@@ -17,7 +17,7 @@ const ContactCard = ({profilePic, name, role, linkedInUrl}) => {
 
       {/** linkedin url */}
       <div>
-        <a href={linkedInUrl} className='text-success font-bold montserrat cursor-pointer'>View Profile</a>
+        <a href={linkedin} target='_blank' rel='noreferrer'  className='text-success font-bold montserrat cursor-pointer'>View Profile</a>
       </div>
 
     </div>

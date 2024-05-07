@@ -16,19 +16,19 @@ function App() {
   ,[])
   
   return (
-    <>
+    <div className='flex flex-col justify-center items-center overflow-x-hidden '>
     <Navbar />
 
-    <Routes>
-      <Route path="/" element={<Hero />} />
-      <Route path="*" element={<Navigate to="/" />} />
-    </Routes>
+    <div className='flex justify-center items-center max-sm:px-5'>
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
+    </div>
 
     <Footer />
 
-
-
-    </>
+    </div>
    
   );
 }

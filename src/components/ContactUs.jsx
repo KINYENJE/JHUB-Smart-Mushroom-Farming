@@ -5,7 +5,7 @@ import { ContactDetails } from '../constants'
 
 const ContactUs = () => {
   return (
-    <div className='flex items-center justify-between '>
+    <div className='flex max-sm:flex-col items-center justify-between '>
 
       {ContactDetails.map((contact, index) => (
         <ContactCard key={index} {...contact} />

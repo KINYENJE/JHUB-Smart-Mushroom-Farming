@@ -41,7 +41,7 @@ const Navbar = () => {
 
 
   return (
-    <header className='transition duration-500' >
+    <header className='transition duration-500 w-full' >
       <div ref={headerRef} className=' w-full flex items-center justify-center py-4 shadow-2xl rounded-full my-1 border-t-4 border-b-4 border-t-primary_blue border-success bg-transparent transition-transform ease-in-out'>
         <ul className='flex gap-5 '>
           {navLinks.map((link, index) => (

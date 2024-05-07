@@ -5,6 +5,7 @@ import maitake from "../assets/images/maitake.webp"
 import lions_mane from "../assets/images/lions.jpg"
 import james from "../assets/images/james.jpeg"
 import vince from "../assets/images/vince.jpeg"
+import ron from "../assets/images/ron.jpeg"
 import iot from "../assets/images/iot_2.jpeg"
 import ml from "../assets/images/monitoring.jpeg"
 
@@ -78,6 +79,8 @@ export const ContactDetails = [
   {name: 'James Njenga', linkedin: 'https://www.linkedin.com/in/james-mbugua-22850423a/', profilePic: james, role: 'Software Engineer'},
   
   {name: 'Allan Vincent', linkedin: 'https://www.linkedin.com/in/allan-vincent-951596245/', role: 'Software Engineer', profilePic: vince},
+
+  {name: 'Ron Timothy Ndwiga', linkedin: 'https://www.linkedin.com/in/ron-gitonga/', role: 'Software Engineer', profilePic: ron},
 ]
 
 
