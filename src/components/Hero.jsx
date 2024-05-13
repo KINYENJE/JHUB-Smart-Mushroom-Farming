@@ -11,14 +11,14 @@ function Hero() {
   return (
     <section>
       <div className="w-full max-w-[1440px] px-8 lg:px-14 App min-h-[100vh] mt-10 flex flex-col items-center justify-center " id='home'>
-    <h1 className='block max-sm:text-xl text-4xl font-bold sm:text-title-xl underline underline-offset-4'>
+    <h1 className='block max-sm:text-xl text-4xl font-bold sm:text-title-xl  '>
       SMART MUSHROOM FARMING
     </h1>
 
     {/** Mushroom farming in kenya details */}
     <div className="w-full flex max-sm:flex-col gap-5 mx-5 my-12 rounded-lg bg-center bg-cover bg-no-repeat" style={{backgroundImage: `url(${farmers_ai})`}}>
       
-      <div className="max-sm:w-full  w-2/3 text-wrap flex items-center justify-center px-10 blue_overlay rounded-lg " data-aos="fade-right"  data-aos-duration="3000">
+      <div className="max-sm:w-full  w-2/3 text-wrap flex items-center justify-center px-10 max-sm:px-5 blue_overlay rounded-lg " data-aos="fade-right"  data-aos-duration="3000">
       <p className='leading-9 text-left text-white font-semibold '>
         Mushroom farming in Kenya is apparently one of the most profitable agribusiness ventures. The demand for mushrooms in Kenya is growing at a fast pace due to the health benefits that come with its consumption. The Kenyan market has a shortage of mushrooms due to the high demand as compared to the supply.
         <br/> <br/>
@@ -41,7 +41,7 @@ function Hero() {
     {/** Variety of mushrooms grown in Kenya */}
     <section className='my-14  w-full py-5 ' id='mushrooms'>
 
-      <h2 className='text-3xl font-semibold capitalize my-8 underline underline-offset-3'>Mushroom Varieties</h2>
+      <h2 className='sm:text-3xl text-2xl font-semibold capitalize my-8 underline underline-offset-3'>Mushroom Varieties</h2>
 
       <MushroomSlider slides={MushroomTypes}/>
     </section>
@@ -49,7 +49,7 @@ function Hero() {
 
     {/** iot and ml section */}
     <section className='my-14  w-full  overflow-hidden ' id='iot-ml'>
-      <h2 className='text-3xl font-semibold capitalize my-8 underline underline-offset-3'>IoT and Machine Learning</h2>
+      <h2 className='sm:text-3xl text-xl font-semibold capitalize my-8 underline underline-offset-3'>IoT and Machine Learning</h2>
       <p className='font-semibold text-warmGray-700'>Our IoT and Machine Learning solutions help you to monitor and control your mushroom farm from anywhere in the world.</p>
       <IoT_ML slides={IoT_MlInfo}/>
 
