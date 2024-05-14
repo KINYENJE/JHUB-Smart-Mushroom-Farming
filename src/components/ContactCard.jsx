@@ -11,7 +11,7 @@ const ContactCard = ({profilePic, name, role, linkedin}) => {
 
       {/** name and role */}
       <div>
-        <h3 className='text-lg font-semibold'>{name}</h3>
+        <h3 className='text-lg font-semibold h-14'>{name}</h3>
         <p className='text-warmGray-700 font-medium '>{role}</p>
       </div>
 

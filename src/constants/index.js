@@ -8,6 +8,7 @@ import vince from "../assets/images/vince.jpeg"
 import ron from "../assets/images/ron.jpeg"
 import iot from "../assets/images/iot_2.jpeg"
 import ml from "../assets/images/monitoring.jpeg"
+import meshack from "../assets/images/meshack.jpeg"
 
 
 
@@ -75,6 +76,8 @@ export const IoT_MlInfo = [
 
 export const ContactDetails = [
   {name: 'Dr. Lawrence Nderu ', linkedin: 'https://www.linkedin.com/in/dr-lawrence-nderu/', profilePic: 'https://jhubafrica.com/assets/lawrence-nderu-Nf3GqEoC.png', role: 'Chairman'},
+
+  {name: 'Meshack Kimondo', linkedin: 'https://www.linkedin.com/in/meshack-kimondo-0b753627/', profilePic: meshack, role: 'Entrepreneur'},
 
   {name: 'James Njenga', linkedin: 'https://www.linkedin.com/in/james-mbugua-22850423a/', profilePic: james, role: 'Software Engineer'},
   

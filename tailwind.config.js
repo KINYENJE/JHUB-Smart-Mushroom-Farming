@@ -5,7 +5,16 @@ module.exports = {
   ],
   theme: {
     extend: {
-      
+      animation: {
+        "loop-scroll": "loop-scroll 90s linear infinite",
+      },
+      keyframes: {
+        "loop-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
+          
+      },
     },
     colors: {
       ...require('tailwindcss/colors'),
