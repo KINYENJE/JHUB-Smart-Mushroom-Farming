@@ -4,7 +4,7 @@ function IoT_ML({slides}) {
   return (
     <div>
       {slides.map((slide, index) => (
-        <div key={index} className={`flex max-sm:flex-col  ${(slide.name === "Machine Learning" ? "flex-row-reverse sm:h-[480px] border-r-4 border-success" : " sm:h-[440px] border-l-4 border-success")}  w-full my-16 rounded-lg border`}>
+        <div key={index} className={`flex max-sm:flex-col  ${(slide.name === "Machine Learning" ? "flex-row-reverse sm:h-[540px]  2xl:h-[480px] border-r-4 border-success" : " sm:h-[500px] 2xl:h-[440px] border-l-4 border-success")}  w-full my-16 rounded-lg border`}>
           <div className='w-full sm:w-1/2 flex flex-col gap-3 py-4 px-10'>
            <div className='h-1/2'>
             <h3 className='text-2xl border-b-4 border-success'>{slide.name}</h3>

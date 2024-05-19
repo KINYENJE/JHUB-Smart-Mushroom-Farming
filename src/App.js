@@ -16,7 +16,7 @@ function App() {
   ,[])
   
   return (
-    <div className='flex flex-col justify-center items-center overflow-x-hidden '>
+    <div className='flex flex-col justify-center items-center overflow-x-hidden'>
     <Navbar />
 
     <div className='flex justify-center items-center max-sm:px-5'>

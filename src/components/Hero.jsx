@@ -9,9 +9,9 @@ import farmers_ai from '../assets/images/farmer_with_AI2.jpeg'
 
 function Hero() {
   return (
-    <section>
-      <div className="w-full max-w-[1440px] px-8 lg:px-14 App min-h-[100vh] mt-10 flex flex-col items-center justify-center " id='home'>
-    <h1 className='block max-sm:text-xl text-4xl font-bold sm:text-title-xl  '>
+    <section >
+      <div className="w-full 2xl:max-w-[1440px] max-w-[1280px] px-8 lg:px-14 App min-h-[100vh] mt-10 flex flex-col items-center justify-center " id='home'>
+    <h1 className='block max-sm:text-xl text-4xl font-bold sm:text-title-xl '>
       SMART MUSHROOM FARMING
     </h1>
 
@@ -41,7 +41,7 @@ function Hero() {
     {/** Variety of mushrooms grown in Kenya */}
     <section className='my-14  w-full py-5 ' id='mushrooms'>
 
-      <h2 className='sm:text-3xl text-2xl font-semibold capitalize my-8 underline underline-offset-3'>Mushroom Varieties</h2>
+      <h2 className='sm:text-3xl text-2xl font-semibold capitalize my-8'>Mushroom Varieties</h2>
 
       <MushroomSlider slides={MushroomTypes}/>
     </section>
@@ -49,15 +49,15 @@ function Hero() {
 
     {/** iot and ml section */}
     <section className='my-14  w-full  overflow-hidden ' id='iot-ml'>
-      <h2 className='sm:text-3xl text-xl font-semibold capitalize my-8 underline underline-offset-3'>IoT and Machine Learning</h2>
+      <h2 className='sm:text-3xl text-xl font-semibold capitalize my-8 '>IoT and Machine Learning</h2>
       <p className='font-semibold text-warmGray-700'>Our IoT and Machine Learning solutions help you to monitor and control your mushroom farm from anywhere in the world.</p>
       <IoT_ML slides={IoT_MlInfo}/>
 
     </section>
 
     {/**Contact us */}
-    <section className='my-14  w-full  ' id='contact'>
-      <h2 className='text-3xl font-semibold capitalize my-8 underline underline-offset-3'>Contact Us</h2>
+    <section className='my-14 w-full  ' id='contact'>
+      <h2 className='text-3xl font-semibold capitalize my-8 '>Contact Us</h2>
       <p>Feel free to reach out to us at: </p>
 
       <div className='my-10'>

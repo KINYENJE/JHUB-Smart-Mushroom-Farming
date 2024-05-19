@@ -84,6 +84,7 @@ export const ContactDetails = [
   {name: 'Allan Vincent', linkedin: 'https://www.linkedin.com/in/allan-vincent-951596245/', role: 'Software Engineer', profilePic: vince},
 
   {name: 'Ron Timothy Ndwiga', linkedin: 'https://www.linkedin.com/in/ron-gitonga/', role: 'Software Engineer', profilePic: ron},
+  
 ]
 
 
