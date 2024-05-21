@@ -13,7 +13,7 @@ const ContactUs = () => {
       ))}
 
     </div>
-    <div className='max-sm:hidden flex gap-8 max-sm:flex-col items-center  animate-loop-scroll group-hover:paused' aria-hidden="true">
+    <div className='max-sm:hidden flex gap-8 max-sm:flex-col items-center  sm:animate-loop-scroll group-hover:paused' aria-hidden="true">
 
       {ContactDetails.map((contact, index) => (
         <ContactCard key={index} {...contact} />

@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 // import heroImage from "../src/assets/images/hero_image.jpg"
 import { Route, Routes, Navigate } from 'react-router-dom';
@@ -9,22 +9,35 @@ import Hero from './components/Hero';
 import Footer from './components/Footer';
 
 function App() {
+  const [showNavbar, setShowNavbar] = useState(false);
+
+  
 
   useEffect(() => {
     Aos.init();
-  }
-  ,[])
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      const windowHeight = window.innerHeight;
+      setShowNavbar(currentScrollY > windowHeight * 0.1);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [])
   
   return (
-    <div className='flex flex-col justify-center items-center overflow-x-hidden'>
-    <Navbar />
-
-    <div className='flex justify-center items-center max-sm:px-5'>
+    <div className='flex flex-col justify-center items-center overflow-x-hidden relative'>
+    {showNavbar && <Navbar />}
+   
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
-    </div>
+   
 
     <Footer />
 

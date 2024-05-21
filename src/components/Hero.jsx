@@ -3,43 +3,43 @@ import MushroomSlider from './MushroomSlider'
 import { IoT_MlInfo, MushroomTypes } from '../constants'
 import ContactUs from './ContactUs'
 import IoT_ML from './IoT_ML'
-import farmers_ai from '../assets/images/farmer_with_AI2.jpeg'
-
+import HeroSection from './HeroSection'
+import { AuroraBackground } from './ui/AuroraBackground'
+import Navbar from './Navbar'
+import { motion } from 'framer-motion'
 
 
 function Hero() {
+  
   return (
-    <section >
-      <div className="w-full 2xl:max-w-[1440px] max-w-[1280px] px-8 lg:px-14 App min-h-[100vh] mt-10 flex flex-col items-center justify-center " id='home'>
-    <h1 className='block max-sm:text-xl text-4xl font-bold sm:text-title-xl '>
-      SMART MUSHROOM FARMING
-    </h1>
-
-    {/** Mushroom farming in kenya details */}
-    <div className="w-full flex max-sm:flex-col gap-5 mx-5 my-12 rounded-lg bg-center bg-cover bg-no-repeat" style={{backgroundImage: `url(${farmers_ai})`}}>
-      
-      <div className="max-sm:w-full  w-2/3 text-wrap flex items-center justify-center px-10 max-sm:px-5 blue_overlay rounded-lg " data-aos="fade-right"  data-aos-duration="3000">
-      <p className='leading-9 text-left text-white font-semibold '>
-        Mushroom farming in Kenya is apparently one of the most profitable agribusiness ventures. The demand for mushrooms in Kenya is growing at a fast pace due to the health benefits that come with its consumption. The Kenyan market has a shortage of mushrooms due to the high demand as compared to the supply.
-        <br/> <br/>
+    <section className='w-full relative ' >
+      {/** Hero section */}
+      <AuroraBackground >
         
-        A survey by the National Farmer Information Service (NAFIS) indicates   Kenya produces <span className=' underline underline-offset-2 text-green-500'>500 tonnes</span> while the demand is <span className=' underline underline-offset-2 text-green-500'>1200 tonnes</span> 
+        <motion.div 
+        initial={{ opacity: 0.0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.3,
+          duration: 0.8,
+          ease: "easeInOut",
+        }} className='w-full h-full flex flex-col items-center overflow-y-hidden'
+         id='home'>
+          <div className='w-full z-20'>
+            <Navbar />
+          </div>
+          <div className=" w-full px-8 lg:px-14 App   ">
+          <HeroSection />
+          </div>
+          
+        </motion.div>
+      </AuroraBackground>
 
-      </p>
       
-      </div>
-
-      {/** Mushroom farming in kenya image */}
-      <div className="max-sm:hidden w-2/3 flex items-center justify-center overflow-hidden" data-aos="fade-left"  data-aos-duration="3000">
-       <div className="w-[300px] lg:w-[400px] h-96  rounded-lg  overflow-x-hidden bg-center  bg-contain" style={{backgroundImage: `url(${farmers_ai})`}} >
-          {/* <img src={heroImage} alt="mushroom farming in kenya" className="w-full h-full object-cover" /> */}
-        </div>
-      </div>
-    </div>
 
 
     {/** Variety of mushrooms grown in Kenya */}
-    <section className='my-14  w-full py-5 ' id='mushrooms'>
+    <section className='my-14  w-full py-5 flex flex-col items-center justify-center px-8 lg:px-14 App ' id='mushrooms'>
 
       <h2 className='sm:text-3xl text-2xl font-semibold capitalize my-8'>Mushroom Varieties</h2>
 
@@ -48,7 +48,7 @@ function Hero() {
 
 
     {/** iot and ml section */}
-    <section className='my-14  w-full  overflow-hidden ' id='iot-ml'>
+    <section className='my-14  w-full  overflow-hidden flex flex-col items-center justify-center px-8 lg:px-14 App ' id='iot-ml'>
       <h2 className='sm:text-3xl text-xl font-semibold capitalize my-8 '>IoT and Machine Learning</h2>
       <p className='font-semibold text-warmGray-700'>Our IoT and Machine Learning solutions help you to monitor and control your mushroom farm from anywhere in the world.</p>
       <IoT_ML slides={IoT_MlInfo}/>
@@ -56,18 +56,18 @@ function Hero() {
     </section>
 
     {/**Contact us */}
-    <section className='my-14 w-full  ' id='contact'>
+    <section className='my-14 w-full  flex flex-col items-center justify-center px-8 lg:px-14 App' id='contact'>
       <h2 className='text-3xl font-semibold capitalize my-8 '>Contact Us</h2>
       <p>Feel free to reach out to us at: </p>
 
-      <div className='my-10'>
+      <div className='my-10 max-sm:flex justify-center items-center'>
         <ContactUs />
       </div>
     </section>
       
 
-  </div>
-    </section>
+  
+  </section>
   
   )
 }

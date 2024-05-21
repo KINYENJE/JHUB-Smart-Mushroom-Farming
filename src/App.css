@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
 .App {
   text-align: center;
   
@@ -41,12 +48,12 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   width: 100%;
   z-index: 1000;
-  background-color: rgb(14 37 87 / 0.9);
+  background-color: rgba(0, 0, 0, 0.651);
   border-radius: 0.1rem;
   color: whitesmoke;
   margin-top: 0px;
   margin-bottom: 0px;
-  border-bottom: 3px solid rgb(33 , 150 , 83, 1);
+  border-bottom: 1px solid rgb(255, 255, 255);
   border-top: none;
   /* transition: top 0.3s ease-in-out; */
  
@@ -74,4 +81,8 @@ h1, h2, h3, h4, h5, h6 {
 
 html {
   scroll-behavior: smooth;
+}
+
+canvas {
+  height: 100vh !important;
 }

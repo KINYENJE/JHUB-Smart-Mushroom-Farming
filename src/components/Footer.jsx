@@ -1,5 +1,6 @@
 import React from 'react'
-import farmerLogo from '../assets/images/farmer_with_AI.jpeg'
+// import farmerLogo from '../assets/images/farmer_with_AI.jpeg'
+import logo from '../assets/images/logo.png'
 import { navLinks } from '../constants'
 import { FaLinkedin } from "react-icons/fa";
 import { FaLink } from "react-icons/fa";
@@ -9,7 +10,7 @@ const Footer = () => {
   return (
     <div className='w-full h-96 max-sm:px-3 bg-black py-12 flex items-center justify-between relative text-white'>
 
-      <div className='w-44 h-44 bg-white rounded-full mx-5 absolute -top-[88px] left-0 border  border-t-black border-x-black bg-no-repeat bg-contain bg-center' style={{backgroundImage: `url(${farmerLogo})` }} ></div>
+      <div className='w-44 h-44 bg-white rounded-full mx-5 absolute -top-[88px] left-0 border  border-t-black border-x-black bg-no-repeat bg-contain bg-center' style={{backgroundImage: `url(${logo})` }} ></div>
 
       <div className='w-1/3 flex items-center justify-center  max-sm:text-xs'>
         <ul className='flex flex-col mt-10 gap-4  '>

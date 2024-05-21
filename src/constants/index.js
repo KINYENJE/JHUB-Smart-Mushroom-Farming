@@ -3,19 +3,23 @@ import oyster from "../assets/images/oyster.jpg"
 import shiitake from "../assets/images/shiitake.webp"
 import maitake from "../assets/images/maitake.webp"
 import lions_mane from "../assets/images/lions.jpg"
-import james from "../assets/images/james.jpeg"
+// import james from "../assets/images/james.jpeg"
 import vince from "../assets/images/vince.jpeg"
 import ron from "../assets/images/ron.jpeg"
-import iot from "../assets/images/iot_2.jpeg"
-import ml from "../assets/images/monitoring.jpeg"
+import iot from "../assets/images/iot_4.jpg"
+import ml from "../assets/images/ai.jpg"
 import meshack from "../assets/images/meshack.jpeg"
+import dyllan from "../assets/images/dyllan.jpg"
+import jessica from "../assets/images/jessica.jpg"
+import ephraim from "../assets/images/ephraim.jpg"
+import jim from "../assets/images/jim.jpg"
 
 
 
 export const navLinks = [
   { name: 'Home', href: '#home' },
   { name: 'Mushrooms', href: '#mushrooms'},
-  {name: 'IoT&ML', href: '#iot-ml'},
+  {name: 'Solutions', href: '#iot-ml'},
   {name: 'Contact Us', href: '#contact'}
 ]
 
@@ -79,11 +83,14 @@ export const ContactDetails = [
 
   {name: 'Meshack Kimondo', linkedin: 'https://www.linkedin.com/in/meshack-kimondo-0b753627/', profilePic: meshack, role: 'Entrepreneur'},
 
-  {name: 'James Njenga', linkedin: 'https://www.linkedin.com/in/james-mbugua-22850423a/', profilePic: james, role: 'Software Engineer'},
+  {name: 'James Njenga', linkedin: 'https://www.linkedin.com/in/james-mbugua-22850423a/', profilePic: jim, role: 'Software Engineer'},
   
-  {name: 'Allan Vincent', linkedin: 'https://www.linkedin.com/in/allan-vincent-951596245/', role: 'Software Engineer', profilePic: vince},
+  {name: 'Allan Vincent', linkedin: 'https://www.linkedin.com/in/allan-vincent-951596245/', role: 'Mobile Developer', profilePic: vince},
 
   {name: 'Ron Timothy Ndwiga', linkedin: 'https://www.linkedin.com/in/ron-gitonga/', role: 'Software Engineer', profilePic: ron},
+  {name: 'Dyllan Macharia', linkedin: 'https://www.linkedin.com/in/dyllan-macharia-4a0a17241/', role: 'Mobile Developer', profilePic: dyllan},
+  {name: "Jessica Ng'ang'a", linkedin: 'https://www.linkedin.com/in/jessica-ng-ang-a-3a5063309/', role: 'Software Engineer', profilePic: jessica},
+  {name: 'Ephraim Shikanga', linkedin: 'https://www.linkedin.com/in/ephraim-shikanga/', role: 'IoT Engineer', profilePic: ephraim}
   
 ]
 
