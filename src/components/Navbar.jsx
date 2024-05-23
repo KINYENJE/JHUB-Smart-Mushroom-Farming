@@ -110,7 +110,7 @@ const Navbar = () => {
           </div>
 
         {isOpen && (
-          <div className='absolute top-20 right-0 w-2/3 h-full bg-transparent backdrop-blur-xl backdrop-brightness-200 backdrop-contrast-200   shadow-2xl rounded-lg py-4 px-14 flex flex-col items-center pt-10  gap-5  ' data-aos="fade-left"  data-aos-duration="2000">
+          <div className='absolute top-20 right-0 w-2/3 h-[100vh] bg-transparent backdrop-blur-lg backdrop-brightness-50 backdrop-contrast-200   shadow-2xl rounded-lg py-4 px-14 flex flex-col items-center pt-10  gap-5  ' data-aos="fade-left"  data-aos-duration="2000">
             {navLinks.map((link, index) => (
               <a key={index} href={link.href} onClick={handleClick} className={' text-[18px] text-white font-semibold hover:underline underline-offset-4 transition-colors duration-500 ' + (path === link.href ? 'text-success' : ' ')}>{link.name}</a>
             ))}
