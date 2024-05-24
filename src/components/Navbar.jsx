@@ -85,7 +85,7 @@ const Navbar = () => {
 
         <div className='flex items-center gap-2 sm:gap-5'>
           <img src={logo} alt="logo" className='w-10 w- h-10 ' />
-          <h1 className='sm:text-2xl text-xl font-bold text-stone-50'>EcoShrumz</h1>
+          <h1 className='sm:text-2xl text-xl font-bold text-stone-50 sm:hidden' >EcoShrumz</h1>
         </div>
         
         <ul className='max-sm:hidden flex gap-5 '>
