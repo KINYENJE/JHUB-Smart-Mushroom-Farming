@@ -1,5 +1,5 @@
 import React from 'react'
-import MushroomSlider from './MushroomSlider'
+import MushroomCards from './MushroomCards'
 import { IoT_MlInfo, MushroomTypes } from '../constants'
 import ContactUs from './ContactUs'
 import IoT_ML from './IoT_ML'
@@ -7,7 +7,7 @@ import HeroSection from './HeroSection'
 import { AuroraBackground } from './ui/AuroraBackground'
 import Navbar from './Navbar'
 import { motion } from 'framer-motion'
-
+import { MushroomSvg } from '../constants'
 
 function Hero() {
   
@@ -39,11 +39,16 @@ function Hero() {
 
 
     {/** Variety of mushrooms grown in Kenya */}
-    <section className='my-14  w-full py-5 flex flex-col items-center justify-center px-8 lg:px-14 App ' id='mushrooms'>
+    <section className='  w-full py-5 flex flex-col items-center justify-center px-8 lg:px-14 App bg-[#0B0B0C]' id='mushrooms'>
 
-      <h2 className='sm:text-3xl text-2xl font-semibold capitalize my-8'>Mushroom Varieties</h2>
+      <h2 className='sm:text-3xl text-2xl font-semibold capitalize mt-8'>
+        {MushroomSvg()}
+      </h2> 
+      
+      <p className='biryani-regular text-white py-3'>Variety of mushrooms grown in Kenya</p>
 
-      <MushroomSlider slides={MushroomTypes}/>
+      {/* <MushroomSlider slides={MushroomTypes}/> */}
+      <MushroomCards cards={MushroomTypes} />
     </section>
 
 
