@@ -8,7 +8,7 @@ const MushroomCards = ({cards}) => {
       {cards.map((card, index) => {
         return (
           <CardContainer className="inter-var">
-            <CardBody className=" relative group/card  hover:shadow-2xl hover:shadow-rose-500/[0.1] bg-black border-white/[0.2]  w-auto  h-auto rounded-xl p-6 border  ">
+            <CardBody className=" relative group/card  hover:shadow-2xl hover:shadow-rose-500/[0.4] bg-black border-white/[0.2]  w-auto  h-auto rounded-xl p-6 border  ">
               <CardItem
                 translateZ="50"
                 className="text-xl font-bold text-white baloo-tamma-2-bal"
