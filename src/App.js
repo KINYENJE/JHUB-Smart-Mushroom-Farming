@@ -5,7 +5,7 @@ import { Route, Routes, Navigate } from 'react-router-dom';
 
 import Aos from 'aos';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
+import Home from './components/Home';
 import Footer from './components/Footer';
 
 function App() {
@@ -34,7 +34,7 @@ function App() {
     {showNavbar && <Navbar />}
    
       <Routes>
-        <Route path="/" element={<Hero />} />
+        <Route path="/" element={<Home />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
    

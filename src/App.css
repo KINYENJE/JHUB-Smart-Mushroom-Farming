@@ -5,6 +5,72 @@
 
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+.horiz-scroll::-webkit-scrollbar {
+  height: 8px;
+  border-radius: 100%;
+
+}
+
+.horiz-scroll::-webkit-scrollbar-thumb {
+  background: #A90842;
+  border-radius: 10px;
+}
+
+.horiz-scroll::-webkit-scrollbar-track {
+  background: #686767;
+  border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #686767;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #A90842;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #A90842;
+  scale: 10.0;
+}
+
+/* no scrollbar**/
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+
+.showcase-top{
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	/*background: url('../images/9032d8130b91eeb57c44ee3dfcbde233.webp') no-repeat center center/cover;*/
+}
+
+.showcase-top::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.15);
+	box-shadow: inset 35px 60px 100px #0B0B0C;
+}
+
+
+
+
 .App {
   text-align: center;
   
@@ -81,7 +147,7 @@
 h1, h2, h3, h4, h5, h6 {
   /* font-family: Montserrat Alternates, sans-serif; */
   font-family: "Biryani", sans-serif;
-  font-weight: 600;
+  
   --tw-text-opacity: 1;
   color: rgb(14 37 87 / var(--tw-text-opacity));
 }
