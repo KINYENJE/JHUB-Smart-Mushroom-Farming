@@ -11,8 +11,6 @@
 
 .horiz-scroll::-webkit-scrollbar {
   height: 8px;
-  border-radius: 100%;
-
 }
 
 .horiz-scroll::-webkit-scrollbar-thumb {
