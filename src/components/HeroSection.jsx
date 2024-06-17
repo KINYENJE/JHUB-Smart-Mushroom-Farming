@@ -1,4 +1,5 @@
 import React , {useState, useEffect, Suspense} from 'react'
+import { useMediaQuery } from 'react-responsive'
 // import farmers_ai from '../assets/images/farmer_with_AI2.jpeg'
 import Loader from './Loader'
 import Model from './Mushroom'
@@ -72,6 +73,12 @@ useEffect(() => {
   }
 
 
+  
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-device-width: 768px)'
+  })
+
+
   return (
     <>
       
@@ -106,8 +113,8 @@ useEffect(() => {
           <pointLight position={[5, 15, 10]} intensity={10} />
           
           <directionalLight position={[0, 10, 0]} intensity={10}  />
-          <OrbitControls autoRotate autoRotateSpeed={1.0} enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} enablePan={false} />
-          <Suspense fallback={<Loader />}>
+          {isDesktopOrLaptop && <OrbitControls autoRotate autoRotateSpeed={1.0} enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} enablePan={false} />}
+          <Suspense fallback={<h1 className='text-2xl text-white'>LOADING</h1>}>
             <primitive 
               object={mushroom.scene} 
               scale={scaleAdjuster()} 
