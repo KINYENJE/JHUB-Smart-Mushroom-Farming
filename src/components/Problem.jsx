@@ -11,9 +11,7 @@ const Problem = () => {
     { title: 'Sprinkling', src: vid2, details: "Chege is sprinkling fungi spores on the wheat straw."},
     { title: 'Chat', src: vid3 , details: "Chege is explaining the process of mushroom cultivation."},
     { title: 'Bags', src: vid4, details: "Chege is packing the mixture of wheat straws and fungi in transparent bags" },
-    { title: 'Bags', src: vid4, details: "Chege is packing the mixture of wheat straws and fungi in transparent bags" },
-    { title: 'Bags', src: vid4, details: "Chege is packing the mixture of wheat straws and fungi in transparent bags" },
-    { title: 'Bags', src: vid4, details: "Chege is packing the mixture of wheat straws and fungi in transparent bags" },
+    
   ];
 
   const [showDetails, setShowDetails] = useState(videos.map(() => false));
@@ -88,32 +86,33 @@ const Problem = () => {
       </p>
 
       <LampContainer>
-        <h1 className='biryani-semibold text-4xl text-transparent bg-white bg-clip-text mt-4'>
+        <h1 className='biryani-semibold text-3xl max-sm:-mt-44 text-nowrap md:text-4xl text-transparent bg-white bg-clip-text sm:mt-4'>
           "Chege's Story"
         </h1>
-        <div className='rounded-lg py-4 px-6 absolute w-full mt-10'>
-          <p className='biryani-semibold text-xl text-trueGray-300 pt-8'>
+        <div className='rounded-lg py-4 px-6 absolute w-full -mt-32 sm:mt-10'>
+          <p className='biryani-semibold text-sm sm:text-xl text-trueGray-300 pt-8'>
             "Chege is a mushroom farmer in Kiambu County, Kenya. He has been growing mushrooms for the past 5 years, and has been able to support his family through the sales of mushrooms. <br /> <br /> However, Chege has been facing a major challenge in his farm. He has been experiencing a high rate of mushroom spoilage due to the lack of proper storage facilities. This has led to a significant loss in revenue for Chege, as he is unable to sell the spoiled mushrooms. Chege is looking for a solution that will help him reduce the rate of mushroom spoilage in his farm, and increase his revenue."
           </p>
         </div>
       </LampContainer>
 
       <div className='flex flex-col items-center justify-center py-16'>
-        <div className='w-full flex gap-7 overflow-auto horiz-scroll'>
+        <div className='w-full flex gap-7 overflow-auto horiz-scroll z-0'>
           {videos.map((video, index) => (
-            <div className='rounded-xl relative transition' key={index}>
+            <div className='rounded-xl relative -z-30 transition' key={index}>
               {/** on hover a dark overlay with title at top of video */}
                 <div className={`bg-black ease-in-out duration-700 bg-opacity-80 ${showDetails[index] ? ' h-[60%]' : ' h-[0%]'} rounded-xl w-full absolute top-0 left-0 flex items-center justify-center z-0`}>
                   
                   {showDetails[index] && (
-                    <div className='flex flex-col justify-center items-center gap-24'>
+                    <div className='flex flex-col justify-center items-center gap-14'>
                       <h1 className='biryani-semibold text-white text-2xl py-8'>{video.title}</h1>
                       <p className='biryani-semibold text-white text-lg'>{video.details}</p>
+                      
                     </div>
                   )}
                 </div>
               {/** Video container */}
-              <div className='xl:w-[350px] 2xl:w-[400px] py-2 -z-10'>
+              <div className='xl:w-[350px] 2xl:w-[400px] w-52 md:w-60  py-2 -z-10'>
                 <video
                   ref={videoRefs.current[index]}
                   onEnded={() => handleVideoEnd(index)}
@@ -127,6 +126,7 @@ const Problem = () => {
                 </video>
               </div>
               <button onClick={() => toggleDetails(index)} className=' backdrop-blur-xl backdrop-brightness-150 rounded-full py-2 px-3 font-bold text-sm absolute top-3 right-1 z-[100]'>View Details</button>
+              
             </div>
           ))}
         </div>
