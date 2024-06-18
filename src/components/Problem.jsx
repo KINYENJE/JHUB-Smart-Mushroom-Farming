@@ -86,12 +86,12 @@ const Problem = () => {
       </p>
 
       <LampContainer>
-        <h1 className='biryani-semibold text-3xl max-sm:-mt-44 text-nowrap md:text-4xl text-transparent bg-white bg-clip-text sm:mt-4'>
+        <h1 className='biryani-semibold text-3xl max-sm:-mt-44 text-nowrap md:text-4xl text-transparent bg-white bg-clip-text sm:-mt-4'>
           "Chege's Story"
         </h1>
-        <div className='rounded-lg py-4 px-6 absolute w-full -mt-32 sm:mt-10'>
-          <p className='biryani-semibold text-sm sm:text-xl text-trueGray-300 pt-8'>
-            "Chege is a mushroom farmer in Kiambu County, Kenya. He has been growing mushrooms for the past 5 years, and has been able to support his family through the sales of mushrooms. <br /> <br /> However, Chege has been facing a major challenge in his farm. He has been experiencing a high rate of mushroom spoilage due to the lack of proper storage facilities. This has led to a significant loss in revenue for Chege, as he is unable to sell the spoiled mushrooms. Chege is looking for a solution that will help him reduce the rate of mushroom spoilage in his farm, and increase his revenue."
+        <div className='rounded-lg py-4 px-6 absolute w-full -mt-32 sm:mt-5'>
+          <p className='biryani-semibold text-[10px] max-sm:leading-4 leading-5 sm:text-[16px] text-trueGray-300 sm:pt-8'>
+            "Chege is a mushroom farmer in Kiambu County, Kenya. He has been growing mushrooms for the past 5 years, and has been able to support his family through the sales of mushrooms. <br /> <br /> However, Chege has been facing a major challenge in his farm. He has been experiencing a high rate of mushroom spoilage due to the lack of proper monitoring and control of the farm conditions. He has had to manually pour cold water on the floor of his "Mud Houses" inorder to obtain optimum temperature and humidity levels. <br /> <br />  Chege has been looking for a solution that will help him to monitor and control his farm conditions remotely, so that he can prevent the spoilage of mushrooms and increase his yield. <br /> <br /> This is where ECO-SHR🍄MZ comes in. We provide smart solutions for mushroom farmers like Chege, leveraging IoT and Machine Learning to help them monitor and control their farms from anywhere in the world."
           </p>
         </div>
       </LampContainer>
