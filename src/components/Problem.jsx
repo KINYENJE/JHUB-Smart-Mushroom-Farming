@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
-import vid1 from "../assets/images/barrel_vid.mp4";
-import vid2 from "../assets/images/sprinkling_vid.mp4";
-import vid3 from "../assets/images/chat_vid.mp4";
-import vid4 from "../assets/images/bags_vid.mp4";
+import vid1 from "../assets/images/barrel_vid1.mp4";
+import vid2 from "../assets/images/sprinkling_vid1.mp4";
+import vid3 from "../assets/images/chat_vid1.mp4";
+import vid4 from "../assets/images/bags_vid1.mp4";
 import { LampContainer } from './ui/Lamp';
 
 const Problem = () => {
@@ -117,9 +117,10 @@ const Problem = () => {
                   ref={videoRefs.current[index]}
                   onEnded={() => handleVideoEnd(index)}
                   key={index}
+                  fill='true'
                   muted controls playsInline
                   loop // Only loop the videos except the fourth one
-                  className='rounded-xl w-full h-full object-cover shadow-lg'
+                  className='rounded-xl w-full h-full object-cover shadow-lg hover:shadow-xl transition ease-in-out duration-700'
                   >
                   <source src={video.src} type="video/mp4" />
                   Your browser does not support the video tag.
