@@ -41,13 +41,13 @@ function Home() {
 
 
     {/** Variety of mushrooms grown in Kenya */}
-    <section className='  w-full py-5 flex flex-col items-center justify-center px-8 lg:px-14 App bg-[#0B0B0C]' id='mushrooms'>
+    <section className='  w-full py-5 flex flex-col items-center justify-center px-8 lg:px-14 App ' id='mushrooms'>
 
       <h2 className='sm:text-3xl text-2xl font-semibold capitalize mt-8'>
         {MushroomSvg()}
       </h2> 
       
-      <p className='biryani-regular text-white py-3'>Variety of mushrooms we are working on.</p>
+      <p className='biryani-semibold text-warmGray-700 text-lg py-3 px-2'>These are a variety of mushrooms that are grown and are popular in the Kenyan market.</p>
 
       {/* <MushroomSlider slides={MushroomTypes}/> */}
       <MushroomCards cards={MushroomTypes} />
@@ -62,7 +62,7 @@ function Home() {
 
     {/** iot and ml section */}
     <section className='my-14  w-full  overflow-hidden flex flex-col items-center justify-center px-8 lg:px-14 App ' id='iot-ml'>
-      <h2 className='sm:text-3xl text-xl font-semibold capitalize my-8 '>IoT and Machine Learning</h2>
+      <h2 className='sm:text-3xl text-xl font-semibold capitalize my-8 text-stone-800'>IoT and Machine Learning</h2>
       <p className='font-semibold text-warmGray-700'>Our IoT and Machine Learning solutions help you to monitor and control your mushroom farm from anywhere in the world.</p>
       <IoT_ML slides={IoT_MlInfo}/>
 

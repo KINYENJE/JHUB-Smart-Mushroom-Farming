@@ -23,7 +23,7 @@ const HeroSection = () => {
         
         <div className="max-sm:w-full  w-1/2 text-wrap flex flex-col max-sm:mt-5 lg:mt-20 px-10 max-sm:px-5 justify-center   rounded-lg text-left relative sm:-top-32 max-sm:top-20 z-10" data-aos="fade-right"  data-aos-duration="3000">
 
-        <h1 className='font-extrabold lg:text-5xl text-4xl xl:text-6xl  py-1  text-transparent bg-clip-text bg-gradient-to-b from-rose-600 from-45% via-white via-60%  to-black  tracking-wider  '>
+        <h1 className='font-extrabold lg:text-5xl text-[33px] xl:text-6xl  py-1  text-transparent bg-clip-text bg-gradient-to-b from-rose-600 from-45% via-white via-60%  to-black  tracking-wider  '>
           ECOSHR<span className=''>🍄</span>MZ
         </h1>
 
