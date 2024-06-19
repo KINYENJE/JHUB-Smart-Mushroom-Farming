@@ -42,13 +42,13 @@ const MushComponent = ({mushroom}) => {
   // })
 
   const scaleAdjuster = () => {
-    if (width < breakpoints.small) {
+    if (width <= breakpoints.small) {
       return 1.5
-    } else if (width < breakpoints.medium) {
+    } else if (width <= breakpoints.medium) {
       return 1.75
-    } else if (width < breakpoints.large) {
+    } else if (width <= breakpoints.large) {
       return 2
-    } else if (width < breakpoints.xlarge) {
+    } else if (width <= breakpoints.xlarge) {
       return 2.25
     } else {
       return 2.5

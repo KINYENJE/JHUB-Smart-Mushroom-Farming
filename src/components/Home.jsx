@@ -30,7 +30,7 @@ function Home() {
           <div className='w-full z-20'>
             <Navbar />
           </div>
-          <div className=" w-full px-8 lg:px-14 App   ">
+          <div className=" w-full px-4 md:px-8 lg:px-14 App   ">
           <HeroSection />
           </div>
           

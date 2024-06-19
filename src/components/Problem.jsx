@@ -27,12 +27,13 @@ const Problem = () => {
       });
     };
 
+    
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         // Play the video when it is 100% visible in the viewport
         // videos after the fourth will only play when visible
         if (entry.target === videoRefs.current[3].current ) {
-          if (entry.isIntersecting) {
+          if (entry.isIntersecting) {         
             entry.target.play();
           } else {
             entry.target.pause();
@@ -41,10 +42,13 @@ const Problem = () => {
       });
     }, { threshold: 1.0 });
 
+    // Add event listeners to all the videos when the component mounts and play the first video
     videoRefs.current.forEach((ref, index) => {
       if (ref.current) {
         ref.current.addEventListener('play', handleVideoPlay);
-        if (index === 3) {
+        // Play the first video initially and the rest when they are 100% visible in the viewport
+        if (index > 2) {
+          // Play the video when it is 100% visible in the viewport
           observer.observe(ref.current);
         }
       }
@@ -56,8 +60,11 @@ const Problem = () => {
     }
 
     return () => {
+      // Clean up the event listeners and observer when the component unmounts
       observer.disconnect();
+      // Remove the event listener from all the videos when the component unmounts
       videoRefs.current.forEach((ref) => {
+        // if the ref is not null and the video is playing
         if (ref.current) {
           ref.current.removeEventListener('play', handleVideoPlay);
         }
