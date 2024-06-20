@@ -41,7 +41,7 @@ function Home() {
 
 
     {/** Variety of mushrooms grown in Kenya */}
-    <section className='  w-full py-5 flex flex-col items-center justify-center px-8 lg:px-14 App ' id='mushrooms'>
+    <section className='  w-full py-5 flex flex-col items-center justify-center px-8 lg:px-14 App bg-warmGray-300' id='mushrooms'>
 
       <h2 className='sm:text-3xl text-2xl font-semibold capitalize mt-8'>
         {MushroomSvg()}
