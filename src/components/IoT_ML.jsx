@@ -65,7 +65,7 @@ function IoT_ML({slides}) {
               </div>
     
               {/* Meaty part - Meteor effect */}
-              <Meteors number={5} />
+              <Meteors number={15} />
             </div>
           </div>
         )

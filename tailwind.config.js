@@ -13,6 +13,7 @@ module.exports = {
     extend: {
       animation: {
         "loop-scroll": "loop-scroll 90s linear infinite",
+        "loop-scroll-2": "loop-scroll 90s linear infinite",
         aurora: "aurora 60s linear infinite",
         "meteor-effect": "meteor 5s linear infinite",
       },
@@ -20,6 +21,10 @@ module.exports = {
         "loop-scroll": {
           from: { transform: "translateX(0)" },
           to: { transform: "translateX(-100%)" },
+        },
+        "loop-scroll-2": {
+          from: { transform: "translateX(100%)" },
+          to: { transform: "translateX(0)" },
         },
         meteor: {
           "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
