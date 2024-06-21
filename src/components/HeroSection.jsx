@@ -21,7 +21,7 @@ const HeroSection = () => {
         {/** Mushroom farming in kenya details */}
         <div className="w-full flex max-sm:flex-col gap-5 max-sm:mx-0  rounded-lg ">
         
-        <div className="max-sm:w-full  w-1/2 text-wrap flex flex-col max-sm:mt-5 md:pt-16 xl:pt-28 px-10 max-sm:px-5 justify-start rounded-lg text-left relative  max-sm:top-20 z-10" data-aos="fade-right"  data-aos-duration="3000">
+        <div className="max-sm:w-full  w-1/2 text-wrap flex flex-col max-sm:mt-5 md:pt-16 xl:pt-28 2xl:pt-60 px-10 max-sm:px-5 justify-start rounded-lg text-left relative  max-sm:top-20 z-10" data-aos="fade-right"  data-aos-duration="3000">
 
         <h1 className='font-extrabold lg:text-[44px] text-[33px] xl:text-[55px]  py-1  text-transparent bg-clip-text bg-gradient-to-b from-rose-600 from-45% via-white via-60%  to-black  tracking-wider  '>
           ECOSHR<span className=''>🍄</span>MZ
