@@ -100,11 +100,11 @@ const Problem = () => {
         <div className='w-full flex gap-7 overflow-auto horiz-scroll z-0'>
           {videos.map((video, index) => (
             <div className='rounded-xl relative -z-30 transition' key={index}>
-              <div className={`bg-black ease-in-out duration-700 bg-opacity-80 ${showDetails[index] ? ' h-[60%]' : ' h-[0%]'} rounded-xl w-full absolute top-0 left-0 flex items-center justify-center z-0`}>
+              <div className={`bg-black ease-in-out duration-700 bg-opacity-80 ${showDetails[index] ? ' h-[60%]' : ' h-[0%]'} rounded-xl w-full absolute top-0 left-0 flex items-center justify-center z-10`}>
                 {showDetails[index] && (
-                  <div className='flex flex-col justify-center items-center gap-14'>
+                  <div className='flex flex-col justify-center items-center gap-4'>
                     <h1 className='biryani-semibold text-white text-2xl py-8'>{video.title}</h1>
-                    <p className='biryani-semibold text-white text-lg'>{video.details}</p>
+                    <p className='biryani-light text-white text-lg'>{video.details}</p>
                   </div>
                 )}
               </div>
@@ -116,13 +116,13 @@ const Problem = () => {
                   fill='true'
                   muted controls playsInline
                   loop
-                  className='rounded-xl w-full h-full object-cover  shadow-lg hover:shadow-xl transition ease-in-out duration-700'
+                  className='rounded-xl w-full h-full object-cover shadow-lg hover:shadow-xl transition ease-in-out duration-700'
                 >
                   <source src={video.src} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>
-              <button onClick={() => toggleDetails(index)} className='backdrop-blur-xl backdrop-brightness-150 rounded-full py-2 px-3 font-bold text-sm absolute top-3 right-1 z-[100]'>
+              <button onClick={() => toggleDetails(index)} className={`backdrop-blur-xl backdrop-brightness-150 rounded-full py-2 px-3 font-bold text-sm absolute top-3 right-1 z-50 ${showDetails[index] ? ' text-warmGray-300' : 'text-black'}`}>
                 {showDetails[index] ? 'Hide Details' : 'View Details'}
               </button>
             </div>
