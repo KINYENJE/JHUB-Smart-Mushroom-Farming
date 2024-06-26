@@ -44,9 +44,9 @@ const HeroSection = () => {
         {/** Mushroom farming in kenya image */}
         <div className=" max-sm:w-full  w-1/2 flex items-center justify-center  overflow-hidden bg-transparent z-0 relative" data-aos="fade-left"  data-aos-duration="3000">
        <div className='bg-transparent w-full h-full absolute z-10 sm:hidden'></div>
-        {/* <Canvas  shadows frameloop="demand" camera={{position: [0, 10, 8], fov: 25 }} className='transition-all ease-in-out absolute -top-20 max-sm:-top-56  '>
+        <Canvas  shadows frameloop="demand" camera={{position: [0, 10, 8], fov: 25 }} className='transition-all ease-in-out absolute -top-20 max-sm:-top-56  '>
           <MushComponent mushroom={mushroom} />
-        </Canvas> */}
+        </Canvas>
 
         </div>
       </div>
