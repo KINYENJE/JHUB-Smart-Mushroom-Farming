@@ -11,20 +11,20 @@ import jkuat_logo from "../assets/images/jkuat_logo.png"
 
 const Footer = () => {
   return (
-    <div className='w-full  max-sm:px-3 bg-black py-12 flex max-sm:flex-col justify-start sm:justify-between relative text-white'>
+    <div className='w-full  max-sm:px-3  bg-black py-12 flex max-sm:flex-col sm:justify-between items-center relative text-white'>
 
-      <div className='w-full sm:w-1/3 flex items-start justify-center  max-sm:text-xs flex-col pt-5 max-sm:pl-2'>
+      <div className='w-full sm:w-1/3 flex max-sm:items-start items-center justify-center  max-sm:text-xs flex-col pt-5 max-sm:pl-2'>
         <h1 className='text-warmGray-400 text-left text-lg sm:text-xl xl:text-2xl font-bold'>Quick Links:</h1>
-        <ul className='flex flex-col pt-5 gap-4  '>
+        <ul className='flex flex-col pt-5 gap-4 items-start justify-start'>
           {navLinks.map((link, index) => (
             <li key={index}>
-              <a href={link.href} className='text-[16px] font-medium text-rose-500 hover:underline underline-offset-4 transition-colors duration-500'>{link.name}</a>
+              <a href={link.href} className='text-[16px] font-medium text-rose-500 hover:underline underline-offset-4 transition-colors duration-500 '>{link.name}</a>
             </li>
           ))}
         </ul>
       </div>
 
-      <div className='w-full sm:w-1/3 max-sm:mt-5 flex flex-col gap-3 sm:gap-8 items-start justify-center max-sm:text-xs max-sm:pl-2'>
+      <div className='w-full sm:w-1/3 max-sm:mt-5 flex flex-col gap-3 sm:gap-8 items-start sm:items-center justify-center max-sm:text-xs max-sm:pl-2'>
         <h1 className='text-warmGray-400 text-left text-lg sm:text-xl xl:text-2xl font-bold'>Our Partners:</h1>
         <div className='flex  gap-6 items-center justify-center sm:pt-5'>
           <div className='bg-white rounded-lg'>
@@ -46,10 +46,11 @@ const Footer = () => {
 
 
 
-      <div className='w-full sm:w-1/3 flex flex-col gap-8 items-start max-sm:pl-2 justify-center max-sm:text-xs'> 
-        <h1 className=' text-warmGray-400 pt-5 text-left text-lg  sm:text-xl xl:text-2xl font-bold'>Connect with us at:</h1>
+      <div className='w-full sm:w-1/3 flex flex-col gap-8 max-sm:items-start items-center max-sm:pl-2 justify-center max-sm:text-xs'> 
+        <h1 className=' text-warmGray-400 pt-5 text-left text-lg  sm:text-xl xl:text-2xl font-bold'>
+          Connect with us at:</h1>
 
-        <div className='flex flex-col gap-4 sm:pt-5 items-start justify-center transition-all duration-300'>
+        <div className='flex flex-col gap-4 sm:pt-5 items-start sm:items-center justify-center transition-all duration-300'>
         <a href="https://jhubafrica.com/" className='text-white flex gap-2' target='_blank' rel='noreferrer'>
           <FaLink size={20} className='text-warmGray-600 hover:scale-150 transition duration-300 hover:text-white'/> <h1 className='text-rose-500'>jhubafrica.com</h1>
         </a>
