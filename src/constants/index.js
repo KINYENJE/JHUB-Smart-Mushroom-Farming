@@ -28,7 +28,7 @@ export const navLinks = [
 
 export const IoT_MlInfo = [
   {
-    name: 'IoT (Internet of Things)',
+    name: 'Automated Smart Farming',
     description: 'Internet of Things (IoT) is a system of interrelated computing devices, mechanical and digital machines provided with unique identifiers and the ability to transfer data over a network without requiring human-to-human or human-to-computer interaction.',
     image: iot, 
     subArray: [
@@ -51,7 +51,7 @@ export const IoT_MlInfo = [
     ]
   },
   {
-    name: 'Machine Learning',
+    name: 'Smart Mushroom Tracking',
     description: 'Machine learning is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. Machine learning focuses on the development of computer programs that can access data and use it to learn for themselves.',
     image: ml,
     subArray: [
