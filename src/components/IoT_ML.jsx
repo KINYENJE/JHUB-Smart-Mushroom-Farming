@@ -9,16 +9,16 @@ function IoT_ML({slides}) {
       {slides.map((slide, index) => {
         return (
           <div className=" w-full relative ">
-            <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
-            <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
-              <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-gray-500">
+            <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-rose-500/[0.4] to-rose-500/[0.8] transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
+            <div className="relative shadow-xl bg-black border border-rose-500/[0.1]  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
+              <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-stone-500">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="h-2 w-2 text-gray-300"
+                  className="h-2 w-2 text-stone-300"
                 >
                   <path
                     strokeLinecap="round"
@@ -32,7 +32,7 @@ function IoT_ML({slides}) {
                 {slide.name}
               </h1>
     
-              <p className="font-normal text-base text-slate-500 mb-4 relative z-50 text-left">
+              <p className="font-normal text-base text-stone-400 mb-4 relative z-50 text-left">
                 {slide.description}
               </p>
     
@@ -42,9 +42,9 @@ function IoT_ML({slides}) {
                     <div key={index} className="flex pl-3 text-sm">
                       
                       <ul>
-                        <li className="list-disc text-gray-400 font-bold text-left">
+                        <li className="list-disc text-stone-400 font-bold text-left">
                           {sub.title}:{" "}
-                          <span className="font-normal text-xs pl-1 text-gray-100">
+                          <span className="font-normal text-xs pl-1 text-stone-100">
                             {sub.details}
                           </span>
                         </li>
@@ -55,11 +55,11 @@ function IoT_ML({slides}) {
                 </div>
                 {/* Image */ }
                 <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.9] bg-red-500 rounded-full blur-3xl z-0" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-rose-500/[0.4] to-rose-500/[0.8] transform scale-[0.9] bg-red-500 rounded-full blur-3xl z-0" />
                   <img
                     src={slide.image}
                     alt={slide.name}
-                    className="relative object-cover object-center h-[350px] sm:w-[500px] w-[300px]  rounded-lg z-10"
+                    className="relative object-cover object-center h-[350px] sm:w-[500px] w-[300px] 2xl:w-[700px]  rounded-lg z-10"
                   />
                 </div>
               </div>

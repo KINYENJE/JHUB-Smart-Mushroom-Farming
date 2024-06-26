@@ -80,7 +80,7 @@ const Problem = () => {
 
   return (
     <div className='w-full'>
-      <h1 className='biryani-light font-thin text-6xl text-white py-4'>Problem Statement</h1>
+      <h1 className='biryani-light font-thin text-6xl text-white py-4'>Future of Farming</h1>
       <p className='biryani-extralight text-2xl text-white pt-8 pb-16 opacity-60'>
         To have a better understanding on the particular problem we are trying to solve. <br /> Here is a brief story about a local mushroom farmer called Chege.
       </p>

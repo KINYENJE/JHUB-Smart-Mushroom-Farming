@@ -6,6 +6,7 @@ import logo from "../assets/images/logo.png"
 import { RiMenu3Fill } from "react-icons/ri";
 import { IoMdCloseCircle } from "react-icons/io";
 import jhubLogo from '../assets/images/jhub_logo.png'
+import jkuaLogo from '../assets/images/jkuat_logo.png'
 
 
 const Navbar = () => {
@@ -96,9 +97,12 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className='max-sm:hidden flex items-center '>
+        <div className='max-sm:hidden flex items-center gap-6 '>
           <a href="https://jhubafrica.com/" target="_blank" rel="noreferrer" >
             <img src={jhubLogo} alt="JHub logo" className='w-10 h-10 scale-150 backdrop-brightness-150 backdrop-blur-3xl rounded-3xl' />
+          </a>
+          <a href="https://www.jkuat.ac.ke/" target="_blank" rel="noreferrer"  >
+            <img src={jkuaLogo} alt="JKUAT logo" className='w-10 h-10 scale-150  rounded-3xl' />
           </a>
         </div>
 
@@ -116,6 +120,9 @@ const Navbar = () => {
             ))}
             <a href="https://jhubafrica.com/" target="_blank" rel="noreferrer">
               <img src={jhubLogo} alt="JHub logo" className='w-20 h-20' />
+            </a>
+            <a href="https://www.jkuat.ac.ke/" target="_blank" rel="noreferrer">
+              <img src={jkuaLogo} alt="JKUAT logo" className='w-20 h-20' />
             </a>
           </div>
         )}

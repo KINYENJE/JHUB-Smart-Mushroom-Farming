@@ -2,6 +2,7 @@ import button from "../assets/images/button.jpeg"
 import oyster from "../assets/images/oyster.jpg"
 import reish from "../assets/images/reish.jpg"
 // import james from "../assets/images/james.jpeg"
+import nderu from "../assets/images/nderu.jpg"
 import vince from "../assets/images/vince.jpeg"
 import ron from "../assets/images/ron.jpeg"
 import iot from "../assets/images/iot_5.jpg"
@@ -77,7 +78,7 @@ export const IoT_MlInfo = [
 
 
 export const ContactDetails = [
-  {name: 'Dr. Lawrence Nderu ', linkedin: 'https://www.linkedin.com/in/dr-lawrence-nderu/', profilePic: 'https://jhubafrica.com/assets/lawrence-nderu-Nf3GqEoC.png', role: 'Chairman'},
+  {name: 'Dr. Lawrence Nderu ', linkedin: 'https://www.linkedin.com/in/dr-lawrence-nderu/', profilePic: nderu, role: 'P.I'},
 
   {name: 'Meshack Kimondo', linkedin: 'https://www.linkedin.com/in/meshack-kimondo-0b753627/', profilePic: meshack, role: 'Entrepreneur'},
 

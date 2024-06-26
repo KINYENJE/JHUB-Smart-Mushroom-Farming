@@ -1,5 +1,6 @@
 import React from 'react'
 // import { ContactDetails } from '../constants'
+import { FaLinkedinIn } from "react-icons/fa";
 
 const ContactCard = ({profilePic, name, role, linkedin}) => {
   return (
@@ -10,14 +11,16 @@ const ContactCard = ({profilePic, name, role, linkedin}) => {
       </div>
 
       {/** name and role */}
-      <div>
-        <h3 className='text-lg font-semibold h-14'>{name}</h3>
+      <div className='gap-3 flex flex-col'>
+        <h3 className='text-lg font-bold text-red-950/100 tracking-wide'>{name}</h3>
         <p className='text-warmGray-700 font-medium '>{role}</p>
       </div>
 
       {/** linkedin url */}
       <div>
-        <a href={linkedin} target='_blank' rel='noreferrer'  className='text-success font-bold montserrat cursor-pointer'>View Profile</a>
+        <a href={linkedin} target='_blank' rel='noreferrer'  className='hover:text-rose-600 bg-transparent backdrop-brightness-50 backdrop-blur-3xl text-lg  px-3 py-1 rounded-3xl font-semibold montserrat cursor-pointer transition-colors duration-300 '>
+          <FaLinkedinIn className='inline-block' />
+        </a>
       </div>
 
     </div>

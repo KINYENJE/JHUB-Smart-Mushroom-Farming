@@ -61,19 +61,19 @@ function Home() {
 
 
     {/** iot and ml section */}
-    <section className='my-14  w-full  overflow-hidden flex flex-col items-center justify-center px-8 lg:px-14 App ' id='iot-ml'>
-      <h2 className='sm:text-3xl text-xl font-semibold capitalize my-8 text-stone-800'>IoT and Machine Learning</h2>
+    <section className='py-14  w-full  overflow-hidden flex flex-col items-center justify-center px-8 lg:px-14 App bg-warmGray-300 shadow-xl' id='iot-ml'>
+      <h2 className='sm:text-3xl text-xl font-semibold capitalize my-8 text-stone-800'>Our Smart Solutions</h2>
       <p className='font-semibold text-warmGray-700'>Our IoT and Machine Learning solutions help you to monitor and control your mushroom farm from anywhere in the world.</p>
       <IoT_ML slides={IoT_MlInfo}/>
 
     </section>
 
     {/**Contact us */}
-    <section className='my-14 w-full  flex flex-col items-center justify-center px-8 lg:px-14 App' id='contact'>
-      <h2 className='text-3xl font-semibold capitalize my-8 '>Contact Us</h2>
+    <section className='py-14 w-full  flex flex-col items-center justify-center px-8 lg:px-14 App bg-warmGray-200' id='contact'>
+      <h2 className='text-3xl font-extrabold capitalize my-8 bg-gradient-to-br from-rose-500 to-black bg-clip-text text-transparent '>Meet The Team</h2>
       <p>Feel free to reach out to us at: </p>
 
-      <div className='my-10 max-sm:flex justify-center items-center'>
+      <div className='py-10 max-sm:flex justify-center items-center'>
         <ContactUs />
       </div>
     </section>
